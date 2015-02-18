@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Sparkle Glitter Puffs!</title>
+    <script src="js/phaser.js"></script>
+    <script src="js/main.js"></script>
+
+<style>
+body
+{
+    color: #777;
+    font-family: "Avenir", Verdana, sans-serif;
+}
+#readme
+{
+    margin-top: 10px;
+}
+</style>
+
+</head>
+<body>
+<div id="game"></div>
+<div id="readme">
+<h2>Doki Doki Kittytown</h2>
+<ul>
+
+<li><strong>Use the mouse to pick your actions!</strong> </li>
+<li></li>
+
+<li><strong>High Concept:</strong>
+Try and win the heart of the kitty!
+</li>
+
+<li><strong>Player Experience Goals:</strong>
+I want player to crave the kitty's love!
+</li>
+
+<li><strong>Genre:</strong>
+This game is a Dating Sim.
+</li>
+
+<li><strong>Game play:</strong>
+Simply click which actions you wish to do or which phrases you wish to say.
+</li>
+
+<li><strong>Prototype goal:</strong>
+Figuring out how to make dating sim type games! :D
+</li>
+
+<li><strong>Features:</strong>
+A dating sim! No action or enemies! Enjoy the hormones.
+</li>
+
+<li><strong>Setting/Premise:</strong>
+You are a dead cat that is trying to escape from the land of the dead.
+</li>
+
+<li><strong>Story:</strong>
+You are a dead cat. Since your death 40 years ago, your soul had no existance for
+souls can only exist in the memories of the living. In other words, you died alone
+and forgotten. However, you suddenly find yourself in the land of the dead, where
+the souls of the remembered roam. Who possibly could have you in their memory? 
+Unfortunately, cats aren't supposed to be in the land of the dead, for unknown reasons. 
+The ghostly guards want you out and you agree with them. You want to find whoever
+has remembered you, and your only chance is to visit the land of the living.
+Luckily, there's a portal nearby for you to escape in!
+</li>
+
+<li><strong>Target Audience:</strong>
+People into romance visual novel games.
+</li>
+
+<li><strong>Play time:</strong>
+About two minutes.
+</li>
+
+<li><strong>Strategies:</strong>
+Choose what you say and do carefully! Kitty will let you know if you're doing good
+or not by the reactions.
+
+</li>
+
+<li><strong>Prototype Assets:</strong>
+Main menu picture:http://znak.at.ua/_ph/7/743075919.jpg
+Schoolroom: http://watchdog.org/wp-content/blogs.dir/1/files/2013/01/Japanese_high_school_classroom.jpg
+</li>
+
+<li><strong>Prototype Closest Other Game:</strong>
+None.
+</li>
+
+</ul>
+</div>
+</body>
+</html>
