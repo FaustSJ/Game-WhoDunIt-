@@ -3,96 +3,32 @@ var game = new Phaser.Game(800, 600, Phaser.AUTO, 'game', { preload: preload, cr
 
 
 function preload () {
-    game.load.image('school', 'assets/background2.jpg');
-    game.load.image('mainmenu', 'assets/mainmenu.png');
-    game.load.image('play', 'assets/play.png');
-    game.load.image('textbox', 'assets/textbox.png');
-    game.load.image('intro','assets/intro.png');
-    game.load.image('next','assets/next.png');
-    game.load.image('kitty1','assets/kitty1.png');
-    game.load.image('p1op1','assets/p1op1.png');
-    game.load.image('p1op2','assets/p1op2.png');
-    game.load.image('kitty12','assets/kitty12.png');
-    game.load.image('p1op3','assets/p1op3.png');
-    game.load.image('p1op4','assets/p1op4.png');
-    game.load.image('kitty2','assets/kitty2.png'); 
-    game.load.image('p2op1','assets/p2op1.png');
-    game.load.image('p2op2','assets/p2op2.png');
-    game.load.image('kitty3','assets/kitty3.png'); 
-    game.load.image('p3op1','assets/p3op1.png');
-    game.load.image('p3op2','assets/p3op2.png');   
-    game.load.image('kitty31','assets/kitty31.png');
-    game.load.image('kitty4','assets/kitty4.png'); 
-    game.load.image('p4op1','assets/p4op1.png');
-    game.load.image('p4op2','assets/p4op2.png'); 
-    game.load.image('p4op3','assets/p4op3.png'); 
-    game.load.image('kitty41','assets/kitty41.png');
-    game.load.image('kitty5','assets/kitty5.png');
-    game.load.image('p5op1','assets/p5op1.png'); 
-    game.load.image('p5op2','assets/p5op2.png');
-    game.load.image('kitty51','assets/kitty51.png');
-    game.load.image('kitty6','assets/kitty6.png'); 
-    game.load.image('p6op1','assets/p6op1.png');
-    game.load.image('p6op2','assets/p6op2.png'); 
-    game.load.image('kitty61','assets/kitty61.png');
-    game.load.image('kitty7','assets/kitty7.png'); 
-    game.load.image('p7op1','assets/p7op1.png');
-    game.load.image('p7op2','assets/p7op2.png'); 
-    game.load.image('p7op3','assets/p7op3.png'); 
-    game.load.image('kitty71','assets/kitty71.png'); 
-    game.load.image('kitty72','assets/kitty72.png'); 
-    game.load.image('kitty8','assets/kitty8.png'); 
-    game.load.image('p8op1','assets/p8op1.png');
-    game.load.image('p8op2','assets/p8op2.png'); 
-    game.load.image('kitty81','assets/kitty81.png'); 
-    game.load.image('kitty82','assets/kitty82.png'); 
-    game.load.image('p8op3','assets/p8op3.png'); 
-    game.load.image('kitty9','assets/kitty9.png'); 
-    game.load.image('p9op1','assets/p9op1.png');
-    game.load.image('p9op2','assets/p9op2.png'); 
-    game.load.image('kitty91','assets/kitty91.png'); 
-    game.load.image('kitty92','assets/kitty92.png'); 
-    game.load.image('kitty10','assets/kitty10.png'); 
-    game.load.image('p10op1','assets/p10op1.png');
-    game.load.image('p10op2','assets/p10op2.png'); 
-    game.load.image('kitty101','assets/kitty101.png'); 
-    game.load.image('p101op1','assets/p101op1.png');
-    game.load.image('kitty102','assets/kitty102.png'); 
-    game.load.image('p102op1','assets/p102op1.png');
-    game.load.image('kitty103','assets/kitty103.png'); 
-    game.load.image('kitty104','assets/kitty104.png'); 
-    game.load.image('body','assets/body.png');
-    game.load.image('closedsmile','assets/closedsmile.png');
-    game.load.image('opensmile','assets/opensmile.png'); 
-    game.load.image('hmface','assets/hmface.png'); 
-    game.load.image('whatface','assets/whatface.png'); 
-    game.load.image('uhhuhface','assets/uhhuhface.png'); 
-    game.load.image('smallopen','assets/smallopen.png'); 
-    game.load.image('mmface','assets/mmface.png'); 
-    game.load.image('ohface','assets/ohface.png'); 
-    game.load.image('smallclosed','assets/smallclosed.png'); 
-    game.load.image('sadface','assets/sadface.png'); 
-    game.load.image('blush1','assets/blush1.png'); 
-    game.load.image('blush2','assets/blush2.png'); 
-    game.load.image('blush3','assets/blush3.png'); 
-    game.load.image('sweatdrop','assets/sweatdrop.png'); 
-    game.load.image('omgface','assets/omgface.png'); 
-    game.load.image('okayending','assets/okayending.png');
-    game.load.image('badending','assets/badending.png');
-    game.load.image('goodending','assets/goodending.png');
-    
+    game.load.image('crimeScene', 'assets/background.jpg');
+    game.load.image('gg', 'assets/gg.png');
+    game.load.image('gk', 'assets/gk.png');
+    game.load.image('gr', 'assets/gr.png');
+    game.load.image('guilla','assets/guilla.png');
+    game.load.image('kg','assets/kg.png');
+    game.load.image('kk','assets/kk.png');
+    game.load.image('knife','assets/knife.png');
+    game.load.image('kr','assets/kr.png');
+    game.load.image('living','assets/living.png');
+    game.load.image('rg','assets/rg.png');
+    game.load.image('rk','assets/rk.png');
+    game.load.image('rope','assets/rope.png'); 
+    game.load.image('rr','assets/rr.png');
+   
 }
 
 var background;
-var play;
-var textbox;
-var maintxt;
-var next;
-var op1;
-var op2;
-var op3;
 var body;
-var face;
+var sknife;
+var srope;
+var sguilla;
+var iknife = 0;
+var irope = 0;
+var iguilla = 0;
+
 
 function create() {
 
