@@ -23,6 +23,8 @@ function preload () {
     game.load.image('done','assets/done.png');
     game.load.image('firstquestion','assets/firstweapon.png');
     game.load.image('secondquestion','assets/secondweapon.png');
+    game.load.image('wrong','assets/wrong.png'); 
+    game.load.image('correct','assets/correct.png');
    
 }
 
@@ -53,6 +55,8 @@ var iguilla2;
 
 var wrong = false;
 var question;
+var realfirst;
+var realsecond;
 
 
 function create() {
@@ -235,40 +239,103 @@ function investigate () {
 	iguilla = game.add.sprite(675,116,'guilla');
 	iguilla.inputEnabled = true;
 	
-	iknife.events.onInputDown.add(secondk, this);
-	irope.events.onInputDown.add(secondr, this);
-	iguilla.events.onInputDown.add(secondg, this);
+	iknife.events.onInputDown.add(guessknife1, this);
+	irope.events.onInputDown.add(guessrope1, this);
+	iguilla.events.onInputDown.add(guessguilla1, this);
 } 
 
 function guessknife1 () {
+	if (knife1!==true)
+	{
+		wrong = true;
+	}
 	
+	iknife.events.onInputUp.add(investigate2, this);	
 }
 
 function guessrope1 () {
+	if (rope1!==true)
+	{
+		wrong = true;
+	}
 	
+	irope.events.onInputUp.add(investigate2, this);	
 }
 
 function guessguilla1 () {
+	if (guilla1!==true)
+	{
+		wrong = true;
+	}
+	
+	iguilla.events.onInputUp.add(investigate2, this);
 	
 }
 
 function investigate2 () {
+	iknife.kill();
+	irope.kill();
+	iguilla.kill();
+	
+	question.loadTexture('secondquestion',0);
+	
+	iknife2 = game.add.sprite(550,0,'knife');
+	iknife2.inputEnabled = true;
+	irope2 = game.add.sprite(688,0,'rope');
+	irope2.inputEnabled = true;
+	iguilla2 = game.add.sprite(675,116,'guilla');
+	iguilla2.inputEnabled = true;
+	
+	iknife2.events.onInputDown.add(guessknife2, this);
+	irope2.events.onInputDown.add(guessrope2, this);
+	iguilla2.events.onInputDown.add(guessguilla2, this);
 	 
 }
 
-function guessknife1 () {
+function guessknife2 () {
+	if (knife2!==true)
+	{
+		wrong = true;
+	}
 	
+	iknife2.events.onInputUp.add(conclusion, this);	
 }
 
-function guessrope1 () {
+function guessrope2 () {
+	if (rope2!==true)
+	{
+		wrong = true;
+	}
 	
+	irope2.events.onInputUp.add(conclusion, this);	
 }
 
-function guessguilla1 () {
+function guessguilla2 () {
+	if (guilla2!==true)
+	{
+		wrong = true;
+	}
+	
+	iguilla2.events.onInputUp.add(conclusion, this);
 	
 }
 
 function conclusion () {
+	question.kill();
+	body.kill();
+	iknife2.kill();
+	irope2.kill();
+	iguilla2.kill();
+	
+	if(wrong)
+	{
+		background.loadTexture('wrong',0);
+		
+	}
+	else
+	{
+		background.loadTexture('correct',0);
+	}
 	
 }
 
