@@ -319,7 +319,7 @@ function guessguilla2 () {
 	iguilla2.events.onInputUp.add(conclusion, this);
 	
 }
-
+//we determine whether the investigator or the murderer won
 function conclusion () {
 	question.kill();
 	body.kill();
@@ -330,6 +330,12 @@ function conclusion () {
 	if(wrong)
 	{
 		background.loadTexture('wrong',0);
+		if(knife1) { realfirst = game.add.sprite(300,230,'knife'); }
+		if(rope1) { realfirst = game.add.sprite(300,230,'rope'); }
+		if(guilla1) { realfirst = game.add.sprite(300,230,'guilla'); }
+		if(knife2) { realsecond = game.add.sprite(300,375,'knife'); }
+		if(rope2) { realsecond = game.add.sprite(300,375,'rope'); }
+		if(guilla2) { realsecond = game.add.sprite(300,375,'guilla'); }
 		
 	}
 	else
