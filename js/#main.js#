@@ -241,6 +241,7 @@ function investigate () {
 } 
 
 function guessknife1 () {
+	if
 	
 }
 
